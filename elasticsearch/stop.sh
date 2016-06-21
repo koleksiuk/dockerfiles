@@ -12,6 +12,4 @@ else
 fi
 
 docker stop elasticsearch-$1
-docker rm elasticsearch-$1
 
-docker run --name=elasticsearch-$1 -p $HTTP_PORT:9200 -p $SERVICE_PORT:9300 -d konole/elasticsearch-lf
